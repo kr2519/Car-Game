@@ -21,7 +21,6 @@ public class ProgressBar : MonoBehaviour
     [Range(1f, 100f)]
     public int Alert = 20;
     public Color BarAlertColor;
-
     [Header("Sound Alert")]
     public AudioClip sound;
     public bool repeat = false;
@@ -67,7 +66,7 @@ public class ProgressBar : MonoBehaviour
         barBackground.color = BarBackGroundColor;
         barBackground.sprite = BarBackGroundSprite;
 
-        UpdateValue(barValue);
+        UpdateValue(0);
 
 
     }
@@ -93,7 +92,8 @@ public class ProgressBar : MonoBehaviour
     {
         if (Application.isPlaying)
         {
-            UpdateValue(40);
+            
+            UpdateValue((float)GameObject.Find("carBody").GetComponent<carController>().score);
             txtTitle.color = TitleColor;
             txtTitle.font = TitleFont;
             txtTitle.fontSize = TitleFontSize;
@@ -105,7 +105,6 @@ public class ProgressBar : MonoBehaviour
         }
         else
         {
-
             if (Alert >= barValue && Time.time > nextPlay)
             {
                 nextPlay = Time.time + RepeatRate;

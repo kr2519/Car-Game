@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - PropsFBX
   - 
   - 
   - 
@@ -40,4 +40,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: sky
+    uniqueID: 2655755587
+    locked: 0
+  - name: mountain02
+    uniqueID: 196517527
+    locked: 0
+  - name: PropsFBX
+    uniqueID: 1149962977
+    locked: 0
+  - name: Car
+    uniqueID: 1099773685
+    locked: 0
+  - name: Flag
+    uniqueID: 3187892775
     locked: 0

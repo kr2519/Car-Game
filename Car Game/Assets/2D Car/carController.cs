@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-
 public class carController : MonoBehaviour {
 
 
@@ -20,21 +19,26 @@ public class carController : MonoBehaviour {
 	public float torqueF;
 	public float torqueB;
 
-
 	public bool TractionFront = true;
 	public bool TractionBack = true;
-
-
-	public float carRotationSpeed;
-
+    public float dist,sp;
+    public GameObject flag;
+    public float carRotationSpeed;
+    public int score;
 	// Use this for initialization
 	void Start () {
-	}
+        flag = GameObject.Find("RegularFlag");
+        sp = Mathf.Abs(flag.transform.position.x - transform.position.x);
+    }
 	
 	// Update is called once per frame
 	void Update () {
-	
-		if (Input.GetAxisRaw ("Vertical") > 0) {
+        flag = GameObject.Find("RegularFlag");
+        dist = Mathf.Abs(flag.transform.position.x - transform.position.x);
+        score = (int)((sp - dist) * 100.0/sp + 0.5);
+        print("Distance " + score);
+
+        if (Input.GetAxisRaw ("Vertical") > 0) {
 
 
 			if (TractionFront) {
