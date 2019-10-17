@@ -45,7 +45,6 @@ public class ProgressBar : MonoBehaviour
     }
 
 
-
     private void Awake()
     {
         bar = transform.Find("Bar").GetComponent<Image>();
@@ -75,7 +74,6 @@ public class ProgressBar : MonoBehaviour
     {
         bar.fillAmount = val / 100;
         txtTitle.text = Title + " " + val + "%";
-
         if (Alert >= val)
         {
             bar.color = BarAlertColor;
@@ -93,7 +91,7 @@ public class ProgressBar : MonoBehaviour
         if (Application.isPlaying)
         {
             
-            UpdateValue((float)GameObject.Find("carBody").GetComponent<carController>().score);
+            UpdateValue((float)GameObject.Find("CarB").GetComponent<Car>().power);
             txtTitle.color = TitleColor;
             txtTitle.font = TitleFont;
             txtTitle.fontSize = TitleFontSize;

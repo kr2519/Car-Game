@@ -1,0 +1,2 @@
+C:\Users\kr2519\Documents\GitHub\Car Game\Car-Game\Car Game\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\kr2519\Documents\GitHub\Car Game\Car-Game\Car Game\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

@@ -64,14 +64,19 @@
   <ItemGroup>
     <Compile Include="Assets\2D Car\carController.cs" />
     <Compile Include="Assets\back_wheel.cs" />
+    <Compile Include="Assets\box.cs" />
     <Compile Include="Assets\button.cs" />
+    <Compile Include="Assets\Car Controller 2D\Scripts\CarController.cs" />
+    <Compile Include="Assets\Car Controller 2D\Scripts\CarControllerDisplay.cs" />
     <Compile Include="Assets\Car.cs" />
     <Compile Include="Assets\floor.cs" />
+    <Compile Include="Assets\FreeLookCamera.cs" />
     <Compile Include="Assets\front_whell.cs" />
     <Compile Include="Assets\ProgressBar\Scene\Demo.cs" />
     <Compile Include="Assets\ProgressBar\Script\ProgressBar.cs" />
     <Compile Include="Assets\ProgressBar\Script\ProgressBarCircle.cs" />
     <Compile Include="Assets\RegularFlag.cs" />
+    <Compile Include="Assets\restart.cs" />
     <None Include="Assets\ColorfulButtons\Credits.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/kr2519/Documents/GitHub/Car Game/Car-Game/Car Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
